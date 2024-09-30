@@ -32,7 +32,7 @@ const Quiz = () => {
             <p className="text-xl text-center">
               {questions[currentQuestionIndex].question}
             </p>
-            <div className="flex flex-col flex-wrap gap-5">
+            <div className="flex flex-col md:flex-row flex-wrap gap-5">
               {questions[currentQuestionIndex].options.map((option, index) => (
                 <button
                   key={index}
