@@ -55,13 +55,13 @@ const ShowResults = ({ partyPoints, highestPoints }) => {
                       <tr>
                         <th
                           scope="col"
-                          className="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-neutral-500"
+                          className=" py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-neutral-500"
                         >
                           Candidato
                         </th>
                         <th
                           scope="col"
-                          className="px-6 py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-neutral-500"
+                          className=" py-3 text-start text-xs font-medium text-gray-500 uppercase dark:text-neutral-500"
                         >
                           Puntaje
                         </th>
@@ -75,11 +75,11 @@ const ShowResults = ({ partyPoints, highestPoints }) => {
                               party.points === highestPoints
                                 ? "bg-blue-100"
                                 : "bg-transparent"
-                            } px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-neutral-800 `}
+                            }  py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-neutral-800 `}
                           >
                             {party.candidate}
                           </td>
-                          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">
+                          <td className=" py-4 whitespace-nowrap text-sm text-gray-800 dark:text-neutral-200">
                             {party.points}
                           </td>
                           <td>
