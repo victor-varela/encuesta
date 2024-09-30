@@ -19,24 +19,24 @@ const Quiz = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center mt-24">
+    <div className="flex flex-col flex-wrap justify-center items-center mt-24">
       {!finish ? (
         <>
           <span className="text-2xl font-bold ">{`${currentQuestionIndex + 1}/${
             questions.length
           }`}</span>
-          <h1 className="text-4xl font-bold">
+          <h1 className="text-4xl text-center font-bold">
             {questions[currentQuestionIndex].subject}
           </h1>
           <div className="shadow-xl bg-blue-100 rounded-xl flex flex-col justify-center items-center my-4 gap-6 p-5">
-            <p className="text-xl">
+            <p className="text-xl text-center">
               {questions[currentQuestionIndex].question}
             </p>
-            <div className="flex gap-5">
+            <div className="flex flex-col flex-wrap gap-5">
               {questions[currentQuestionIndex].options.map((option, index) => (
                 <button
                   key={index}
-                  className="border p-6 bg-yellow-500 hover:bg-yellow-600 hover:scale-110 transition-all"
+                  className="border p-6 bg-yellow-500 md:hover:bg-yellow-600 md:hover:scale-110 transition-all"
                   onClick={() => handleAnswer(option)}
                 >
                   {option}
